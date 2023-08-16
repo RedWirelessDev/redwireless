@@ -1,0 +1,21 @@
+{
+  "name": "@redwireless/google_login",
+  "version": "1.0.0",
+  "description": "A Google authentication extension for RedWireless.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedWirelessDev/redwireless/tree/main/packages/google_login"
+  },
+  "keywords": [
+    "RedWireless google login"
+  ],
+  "author": "Karan Singh Gill (https://redwireless.ca/)",
+  "license": "GNU GENERAL PUBLIC LICENSE 3.0",
+  "bugs": {
+    "url": "https://github.com/RedWirelessDev/redwireless/issues"
+  },
+  "homepage": "https://github.com/RedWirelessDev/redwireless/tree/main/packages/google_login",
+  "engines": {
+    "node": ">= 14.0.0"
+  }
+}

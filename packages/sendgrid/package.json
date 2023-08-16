@@ -1,0 +1,25 @@
+{
+  "name": "@redwireless/sendgrid",
+  "version": "1.0.0",
+  "description": "A SendGrid extension for RedWireless.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedWirelessDev/redwireless/tree/main/packages/sendgrid"
+  },
+  "keywords": [
+    "RedWireless email",
+    "RedWireless SendGrid"
+  ],
+  "author": "Karan Singh Gill (https://redwireless.ca/)",
+  "license": "GNU GENERAL PUBLIC LICENSE 3.0",
+  "bugs": {
+    "url": "https://github.com/RedWirelessDev/redwireless/issues"
+  },
+  "homepage": "https://github.com/RedWirelessDev/redwireless/tree/main/packages/sendgrid",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0"
+  },
+  "engines": {
+    "node": ">= 14.0.0"
+  }
+}

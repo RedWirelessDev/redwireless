@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "./themes/friday/components/*",
+        "./extensions/productComment/components/*",
+        "./packages/redwireless/src/components/*"
+      ],
+      "@components-origin/*": [
+        "./packages/redwireless/src/components/*"
+      ],
+      "@default-theme/cms/*" : [
+        "./packages/redwireless/src/modules/cms/pages/*"
+      ],
+      "@redwireless/redwireless/*" : [
+        "./packages/redwireless/*"
+      ]
+    }
+  }
+}
