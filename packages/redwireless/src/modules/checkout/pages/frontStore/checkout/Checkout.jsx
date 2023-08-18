@@ -9,7 +9,7 @@ import {
 } from '@components/common/context/checkoutSteps';
 import { CheckoutProvider } from '@components/common/context/checkout';
 import './Checkout.scss';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 function Steps() {
   return (

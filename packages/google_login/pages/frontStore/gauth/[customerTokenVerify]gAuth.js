@@ -1,8 +1,8 @@
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const {
   getGoogleAuthUrl
-} = require('@redwireless/google_login/services/getGoogleAuthUrl');
+} = require('@redsuperadmin/google_login/services/getGoogleAuthUrl');
 
 module.exports = (request, response, delegate, next) => {
   // Check if customer is already logged in

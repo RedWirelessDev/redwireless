@@ -5,7 +5,7 @@ import { ItemOptions } from './ItemOptions';
 import { ItemVariantOptions } from './ItemVariantOptions';
 import './Items.scss';
 import { useAppDispatch } from '@components/common/context/app';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 function Items({ items }) {
   const AppContextDispatch = useAppDispatch();

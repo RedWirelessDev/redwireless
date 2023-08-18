@@ -1,13 +1,13 @@
-const { select, update, insert } = require('@redwireless/postgres-query-builder');
+const { select, update, insert } = require('@redsuperadmin/postgres-query-builder');
 const { default: axios } = require('axios');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getApiBaseUrl } = require('../../services/getApiBaseUrl');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

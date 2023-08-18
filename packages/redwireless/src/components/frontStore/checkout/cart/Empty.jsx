@@ -1,9 +1,9 @@
 import React from 'react';
 import { useAppState } from '@components/common/context/app';
 import Button from '@components/common/form/Button';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
 
 export function Empty() {
   const items = get(useAppState(), 'cart.items', []);

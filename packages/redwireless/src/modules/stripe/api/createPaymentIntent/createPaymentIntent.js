@@ -1,13 +1,13 @@
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const smallestUnit = require('zero-decimal-currencies');
 const stripePayment = require('stripe');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { getSetting } = require('../../../setting/services/setting');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const {
   OK,
   INVALID_PAYLOAD
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

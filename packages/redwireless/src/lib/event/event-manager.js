@@ -1,7 +1,7 @@
-const { select, del } = require('@redwireless/postgres-query-builder');
+const { select, del } = require('@redsuperadmin/postgres-query-builder');
 const { loadSubscribers } = require('./loadSubscribers');
 const { callSubscribers } = require('./callSubscibers');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 
 const loadEventInterval = 5000;
 const syncEventInterval = 2000;

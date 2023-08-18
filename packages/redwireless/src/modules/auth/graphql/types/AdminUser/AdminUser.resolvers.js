@@ -1,6 +1,6 @@
-const { select } = require('@redwireless/postgres-query-builder');
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
+const { select } = require('@redsuperadmin/postgres-query-builder');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
 
 module.exports = {
   Query: {

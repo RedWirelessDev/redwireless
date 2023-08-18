@@ -2,17 +2,17 @@ const path = require('path');
 const { existsSync, rmdirSync } = require('fs');
 const { writeFile, mkdir } = require('fs').promises;
 const { inspect } = require('util');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const { loadModules } = require('../../serve/loadModules');
 const ora = require('ora');
 const { red, green } = require('kleur');
 const boxen = require('boxen');
 const { loadModuleRoutes } = require('../../serve/loadModuleRoutes');
 const { loadModuleComponents } = require('../../serve/loadModuleComponents');
-const { getRoutes } = require('@redwireless/redwireless/src/lib/router/routes');
+const { getRoutes } = require('@redsuperadmin/redwireless/src/lib/router/routes');
 const {
   getComponentsByRoute
-} = require('@redwireless/redwireless/src/lib/componee/getComponentByRoute');
+} = require('@redsuperadmin/redwireless/src/lib/componee/getComponentByRoute');
 const webpack = require('webpack');
 
 const modules = loadModules(path.resolve(__dirname, '../../../src', 'modules'));
@@ -66,7 +66,7 @@ const start = Date.now();
 // Run building vendor first
 const {
   createVendorConfig
-} = require('@redwireless/redwireless/src/lib/webpack/configProvider');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/configProvider');
 const vendorComplier = webpack(createVendorConfig(webpack));
 const webpackVendorPromise = new Promise((resolve, reject) => {
   vendorComplier.run((err, stats) => {

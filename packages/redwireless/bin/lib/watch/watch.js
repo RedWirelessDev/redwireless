@@ -1,8 +1,8 @@
 const chokidar = require('chokidar');
 const { resolve } = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const { existsSync } = require('fs');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 
 function watch(calbacks = []) {
   const watcher = chokidar.watch(resolve(CONSTANTS.ROOTPATH, 'extensions/**'), {

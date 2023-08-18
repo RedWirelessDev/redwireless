@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
-const { insert, select } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { insert, select } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 const { addressValidator } = require('../../services/addressValidator');
 const { getCartByUUID } = require('../../services/getCartByUUID');
 const { saveCart } = require('../../services/saveCart');

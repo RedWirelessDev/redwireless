@@ -1,14 +1,14 @@
 const chokidar = require('chokidar');
 const { resolve, sep, normalize } = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { Componee } = require('@redwireless/redwireless/src/lib/componee/Componee');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { Componee } = require('@redsuperadmin/redwireless/src/lib/componee/Componee');
 const {
   createComponents
-} = require('@redwireless/redwireless/bin/lib/createComponents');
-const { getRoutes } = require('@redwireless/redwireless/src/lib/router/Router');
+} = require('@redsuperadmin/redwireless/bin/lib/createComponents');
+const { getRoutes } = require('@redsuperadmin/redwireless/src/lib/router/Router');
 const {
   isBuildRequired
-} = require('@redwireless/redwireless/src/lib/webpack/isBuildRequired');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/isBuildRequired');
 
 function watchComponents() {
   chokidar

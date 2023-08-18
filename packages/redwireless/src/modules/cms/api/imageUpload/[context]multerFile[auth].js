@@ -1,10 +1,10 @@
 const { mkdirSync } = require('fs');
 const { join } = require('path');
 const multer = require('multer');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const {
   INVALID_PAYLOAD
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 const storage = multer.diskStorage({
   destination(request, file, cb) {

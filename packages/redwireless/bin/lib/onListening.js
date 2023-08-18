@@ -1,6 +1,6 @@
 const boxen = require('boxen');
 const { red, green } = require('kleur');
-const isDevelopmentMode = require('@redwireless/redwireless/src/lib/util/isDevelopmentMode');
+const isDevelopmentMode = require('@redsuperadmin/redwireless/src/lib/util/isDevelopmentMode');
 const normalizePort = require('./normalizePort');
 const port = normalizePort();
 /**

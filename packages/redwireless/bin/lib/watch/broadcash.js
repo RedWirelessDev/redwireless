@@ -1,4 +1,4 @@
-const { getRoutes } = require('@redwireless/redwireless/src/lib/router/Router');
+const { getRoutes } = require('@redsuperadmin/redwireless/src/lib/router/Router');
 
 module.exports.broadcash = function broadcash() {
   const routes = getRoutes();

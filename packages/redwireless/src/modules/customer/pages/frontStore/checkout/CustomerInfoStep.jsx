@@ -6,7 +6,7 @@ import {
 } from '@components/common/context/checkoutSteps';
 import { useCheckout } from '@components/common/context/checkout';
 import { Edit } from '@components/frontStore/customer/checkout/Edit';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 export default function ContactInformationStep({
   cart: { customerEmail, addContactInfoApi },

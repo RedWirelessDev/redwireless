@@ -1,5 +1,5 @@
-const logger = require('@redwireless/redwireless/src/lib/log/logger');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
+const logger = require('@redsuperadmin/redwireless/src/lib/log/logger');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
 const { setDelegate } = require('./delegate');
 
 // eslint-disable-next-line no-multi-assign

@@ -1,4 +1,4 @@
-const { currencies } = require('@redwireless/redwireless/src/lib/locale/currencies');
+const { currencies } = require('@redsuperadmin/redwireless/src/lib/locale/currencies');
 
 module.exports = {
   Query: {

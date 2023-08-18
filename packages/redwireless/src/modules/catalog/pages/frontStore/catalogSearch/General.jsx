@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import './General.scss';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 export default function SearchInfo() {
   const [key, setKey] = React.useState('');

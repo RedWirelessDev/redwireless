@@ -1,4 +1,4 @@
-const { execute } = require('@redwireless/postgres-query-builder');
+const { execute } = require('@redsuperadmin/postgres-query-builder');
 
 // eslint-disable-next-line no-multi-assign
 module.exports = exports = async (connection) => {

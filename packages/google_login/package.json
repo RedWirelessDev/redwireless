@@ -1,5 +1,5 @@
 {
-  "name": "@redwireless/google_login",
+  "name": "@redsuperadmin/google_login",
   "version": "1.0.0",
   "description": "A Google authentication extension for RedWireless.",
   "repository": {

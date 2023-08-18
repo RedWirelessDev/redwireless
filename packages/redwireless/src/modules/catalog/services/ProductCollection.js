@@ -1,8 +1,8 @@
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const uniqid = require('uniqid');
-const { select, value, node } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { select, value, node } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 
 class ProductCollection {
   constructor(baseQuery) {

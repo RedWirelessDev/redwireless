@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
 
 module.exports.getContextValue = function getContextValue(
   request,

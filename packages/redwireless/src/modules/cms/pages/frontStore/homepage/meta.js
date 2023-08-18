@@ -1,4 +1,4 @@
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

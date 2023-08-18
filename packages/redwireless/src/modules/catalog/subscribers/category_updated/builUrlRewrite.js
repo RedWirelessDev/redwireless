@@ -1,9 +1,9 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   execute,
   insertOnUpdate,
   select
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   try {

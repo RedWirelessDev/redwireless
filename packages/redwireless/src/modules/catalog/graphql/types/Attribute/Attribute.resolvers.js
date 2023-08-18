@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
-const { select } = require('@redwireless/postgres-query-builder');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
+const { select } = require('@redsuperadmin/postgres-query-builder');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
 
 module.exports = {
   Query: {

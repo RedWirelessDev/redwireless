@@ -5,8 +5,8 @@ const {
   del,
   select,
   insertOnUpdate
-} = require('@redwireless/postgres-query-builder');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
+} = require('@redsuperadmin/postgres-query-builder');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
 
 module.exports = async (request, response, delegate) => {
   const attribute = await delegate.updateAttribute;

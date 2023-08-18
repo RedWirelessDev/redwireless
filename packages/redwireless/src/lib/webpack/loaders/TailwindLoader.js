@@ -33,7 +33,7 @@ module.exports = exports = function TailwindLoader(c) {
     join(CONSTANTS.ROOTPATH, 'extensions', '**', '[A-Z]*.jsx'),
     // All file in packages/redwireless/src and name is capitalized
     join(CONSTANTS.ROOTPATH, 'packages', 'redwireless', 'src', '**', '[A-Z]*.jsx'),
-    // All file in node_modules/@redwireless/redwireless/src and name is capitalized
+    // All file in node_modules/@redsuperadmin/redwireless/src and name is capitalized
     join(
       CONSTANTS.ROOTPATH,
       'node_modules',

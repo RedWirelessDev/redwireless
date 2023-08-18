@@ -1,7 +1,7 @@
-const { select } = require('@redwireless/postgres-query-builder');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { select } = require('@redsuperadmin/postgres-query-builder');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { ProductCollection } = require('../../../services/ProductCollection');
 const {
   getProductsByCollectionBaseQuery

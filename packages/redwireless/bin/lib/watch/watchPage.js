@@ -1,6 +1,6 @@
 const touch = require('touch');
 const { resolve } = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 
 module.exports.watchPage = function (event, path) {
   if (event === 'add') {

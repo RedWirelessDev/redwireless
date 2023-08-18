@@ -1,10 +1,10 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   execute,
   select,
   insert,
   insertOnUpdate
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   const categoryId = data.category_id;

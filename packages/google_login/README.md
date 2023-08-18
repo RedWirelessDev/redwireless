@@ -9,7 +9,7 @@ This extension allows customer to login to RedWireless using your Google account
 ### Step 1: Install the extension using npm:
 
 ```bash
-npm install @redwireless/google_login
+npm install @redsuperadmin/google_login
 ```
 
 ### Step 2: Enable the extension
@@ -25,7 +25,7 @@ Edit the `config/default.json` file in the root directory of your RedWireless in
       ...,
       {
         "name": "google_login",
-        "resolve": "node_modules/@redwireless/google_login",
+        "resolve": "node_modules/@redsuperadmin/google_login",
         "enabled": true,
         "priority": 10
       }

@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 /* eslint-disable guard-for-in */
 /* eslint-disable import/no-import-module-exports */
-const isErrorHandlerTriggered = require('@redwireless/redwireless/src/lib/middleware/isErrorHandlerTriggered');
+const isErrorHandlerTriggered = require('@redsuperadmin/redwireless/src/lib/middleware/isErrorHandlerTriggered');
 
 module.exports = async (request, response, delegate, next) => {
   /** Get all promise delegate */

@@ -4,14 +4,14 @@
 const express = require('express');
 const {
   getModuleMiddlewares
-} = require('@redwireless/redwireless/src/lib/middleware');
-const { getRoutes } = require('@redwireless/redwireless/src/lib/router/Router');
+} = require('@redsuperadmin/redwireless/src/lib/middleware');
+const { getRoutes } = require('@redsuperadmin/redwireless/src/lib/router/Router');
 const { getCoreModules } = require('./loadModules');
 const { addDefaultMiddlewareFuncs } = require('./addDefaultMiddlewareFuncs');
 const {
   loadModuleRoutes
-} = require('@redwireless/redwireless/src/lib/router/loadModuleRoutes');
-const { Handler } = require('@redwireless/redwireless/src/lib/middleware/Handler');
+} = require('@redsuperadmin/redwireless/src/lib/router/loadModuleRoutes');
+const { Handler } = require('@redsuperadmin/redwireless/src/lib/middleware/Handler');
 const { getEnabledExtensions } = require('../extension');
 
 module.exports.createApp = () => {

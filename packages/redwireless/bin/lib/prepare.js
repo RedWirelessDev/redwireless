@@ -1,4 +1,4 @@
-const { getAdminRoutes } = require('@redwireless/redwireless/src/lib/router/Router');
+const { getAdminRoutes } = require('@redsuperadmin/redwireless/src/lib/router/Router');
 
 module.exports = exports = {};
 

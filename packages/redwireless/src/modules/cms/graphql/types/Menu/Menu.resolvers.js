@@ -1,5 +1,5 @@
-const { select, value } = require('@redwireless/postgres-query-builder');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { select, value } = require('@redsuperadmin/postgres-query-builder');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 
 module.exports = {
   Query: {

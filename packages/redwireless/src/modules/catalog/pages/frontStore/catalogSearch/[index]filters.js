@@ -1,9 +1,9 @@
 const {
   translate
-} = require('@redwireless/redwireless/src/lib/locale/translate/translate');
+} = require('@redsuperadmin/redwireless/src/lib/locale/translate/translate');
 const {
   setContextValue
-} = require('@redwireless/redwireless/src/modules/graphql/services/contextHelper');
+} = require('@redsuperadmin/redwireless/src/modules/graphql/services/contextHelper');
 
 module.exports = (request, response, delegate, next) => {
   const { query } = request;

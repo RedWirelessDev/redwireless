@@ -1,5 +1,5 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { select, update } = require('@redwireless/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { select, update } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = async function graphql(request, response, delegate, next) {
   try {

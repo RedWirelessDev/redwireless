@@ -1,5 +1,5 @@
 {
-  "name": "@redwireless/sendgrid",
+  "name": "@redsuperadmin/sendgrid",
   "version": "1.0.0",
   "description": "A SendGrid extension for RedWireless.",
   "repository": {

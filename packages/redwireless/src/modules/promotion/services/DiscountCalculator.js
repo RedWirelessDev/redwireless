@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
-const { select } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { select } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const { toPrice } = require('../../checkout/services/toPrice');
 const { getCartTotalBeforeDiscount } = require('./getCartTotalBeforeDiscount');
 

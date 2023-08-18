@@ -1,8 +1,8 @@
 const {
   translate
-} = require('@redwireless/redwireless/src/lib/locale/translate/translate');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
-const { select } = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/redwireless/src/lib/locale/translate/translate');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = {
   Query: {

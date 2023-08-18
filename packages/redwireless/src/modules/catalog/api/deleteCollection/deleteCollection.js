@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-const { del, select } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { del, select } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 module.exports = async (request, response, delegate, next) => {
   try {

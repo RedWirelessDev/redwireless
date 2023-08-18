@@ -1,25 +1,25 @@
 const cookieParser = require('cookie-parser');
 const pathToRegexp = require('path-to-regexp');
 const webpack = require('webpack');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
 const middleware = require('webpack-dev-middleware');
 const {
   createConfigClient
-} = require('@redwireless/redwireless/src/lib/webpack/dev/createConfigClient');
-const isDevelopmentMode = require('@redwireless/redwireless/src/lib/util/isDevelopmentMode');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/dev/createConfigClient');
+const isDevelopmentMode = require('@redsuperadmin/redwireless/src/lib/util/isDevelopmentMode');
 const {
   isBuildRequired
-} = require('@redwireless/redwireless/src/lib/webpack/isBuildRequired');
-const publicStatic = require('@redwireless/redwireless/src/lib/middlewares/publicStatic');
-const themePublicStatic = require('@redwireless/redwireless/src/lib/middlewares/themePublicStatic');
-const { select } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/isBuildRequired');
+const publicStatic = require('@redsuperadmin/redwireless/src/lib/middlewares/publicStatic');
+const themePublicStatic = require('@redsuperadmin/redwireless/src/lib/middlewares/themePublicStatic');
+const { select } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   setContextValue
-} = require('@redwireless/redwireless/src/modules/graphql/services/contextHelper');
+} = require('@redsuperadmin/redwireless/src/modules/graphql/services/contextHelper');
 const {
   translate
-} = require('@redwireless/redwireless/src/lib/locale/translate/translate');
+} = require('@redsuperadmin/redwireless/src/lib/locale/translate/translate');
 
 module.exports = exports = {};
 

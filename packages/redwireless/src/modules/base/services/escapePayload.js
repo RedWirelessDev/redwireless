@@ -1,4 +1,4 @@
-const secret = require('@redwireless/redwireless/src/modules/base/services/secret');
+const secret = require('@redsuperadmin/redwireless/src/modules/base/services/secret');
 
 function escapeHtmlTags(str) {
   const regex = /<([a-zA-Z]+)(?:\s[^>]*)?>|<\/([a-zA-Z]+)>/g;

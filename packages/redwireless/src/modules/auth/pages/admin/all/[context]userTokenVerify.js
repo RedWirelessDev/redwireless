@@ -1,17 +1,17 @@
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
 const { getTokenSecret } = require('../../../services/getTokenSecret');
 const { generateToken } = require('../../../services/generateToken');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 const {
   getAdminTokenCookieId
 } = require('../../../services/getAdminTokenCookieId');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 
 module.exports = async (request, response, delegate, next) => {
   const cookieId = getAdminTokenCookieId();

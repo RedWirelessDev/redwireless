@@ -1,5 +1,5 @@
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 
 class ReviewCollection {
   constructor(baseQuery) {

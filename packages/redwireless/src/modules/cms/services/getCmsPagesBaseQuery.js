@@ -1,4 +1,4 @@
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports.getCmsPagesBaseQuery = () => {
   const query = select().from('cms_page');

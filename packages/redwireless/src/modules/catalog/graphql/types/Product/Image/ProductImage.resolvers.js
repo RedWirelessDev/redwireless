@@ -1,9 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const uniqid = require('uniqid');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 
 function getUrls(image) {
   const thumbVersion = image.replace(/.([^.]*)$/, '-thumb.$1');

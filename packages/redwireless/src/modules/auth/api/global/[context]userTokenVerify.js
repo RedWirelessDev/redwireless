@@ -1,9 +1,9 @@
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
-const { UNAUTHORIZED } = require('@redwireless/redwireless/src/lib/util/httpStatus');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
+const { UNAUTHORIZED } = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 const { setContextValue } = require('../../../graphql/services/contextHelper');
 const { generateToken } = require('../../services/generateToken');
 const {

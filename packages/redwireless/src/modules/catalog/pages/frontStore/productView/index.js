@@ -1,7 +1,7 @@
-const { select, node } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { select, node } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

@@ -1,5 +1,5 @@
-const { execute } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { execute } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { getProductsBaseQuery } = require('./getProductsBaseQuery');
 
 module.exports.getProductsByCategoryBaseQuery = async (

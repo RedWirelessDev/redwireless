@@ -1,5 +1,5 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { select, insertOnUpdate } = require('@redwireless/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { select, insertOnUpdate } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = async function buildUrlReWrite(data) {
   const productId = data.product_id;

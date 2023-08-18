@@ -13,7 +13,7 @@
       "@default-theme/cms/*" : [
         "./packages/redwireless/src/modules/cms/pages/*"
       ],
-      "@redwireless/redwireless/*" : [
+      "@redsuperadmin/redwireless/*" : [
         "./packages/redwireless/*"
       ]
     }

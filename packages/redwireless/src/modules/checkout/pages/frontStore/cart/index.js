@@ -1,6 +1,6 @@
 const {
   translate
-} = require('@redwireless/redwireless/src/lib/locale/translate/translate');
+} = require('@redsuperadmin/redwireless/src/lib/locale/translate/translate');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

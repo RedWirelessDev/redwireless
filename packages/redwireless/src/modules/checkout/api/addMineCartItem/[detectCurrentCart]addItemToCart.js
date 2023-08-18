@@ -1,4 +1,4 @@
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const {
   setContextValue,
   getContextValue
@@ -9,8 +9,8 @@ const {
   INVALID_PAYLOAD,
   INTERNAL_SERVER_ERROR,
   OK
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { createNewCart } = require('../../services/createNewCart');
 
 module.exports = async (request, response, delegate, next) => {

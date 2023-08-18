@@ -4,14 +4,14 @@ const path = require('path');
 const { inspect } = require('util');
 const {
   getComponentsByRoute
-} = require('@redwireless/redwireless/src/lib/componee/getComponentsByRoute');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+} = require('@redsuperadmin/redwireless/src/lib/componee/getComponentsByRoute');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const {
   getRouteBuildPath
-} = require('@redwireless/redwireless/src/lib/webpack/getRouteBuildPath');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/getRouteBuildPath');
 const {
   parseGraphql
-} = require('@redwireless/redwireless/src/lib/webpack/util/parseGraphql');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/util/parseGraphql');
 const JSON5 = require('json5');
 /**
  * Only pass the page routes, not api routes
@@ -64,8 +64,8 @@ module.exports.buildEntry = async function buildEntry(
       let contentClient = `
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import Area from '@redwireless/redwireless/src/components/common/Area';
-      import Hydrate from '@redwireless/redwireless/src/components/common/react/client/${
+      import Area from '@redsuperadmin/redwireless/src/components/common/Area';
+      import Hydrate from '@redsuperadmin/redwireless/src/components/common/react/client/${
         route.isAdmin ? 'HydrateAdmin' : 'HydrateFrontStore'
       }';
       `;
@@ -96,7 +96,7 @@ module.exports.buildEntry = async function buildEntry(
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import Area from '@redwireless/redwireless/src/components/common/Area';`;
+        contentServer += `import Area from '@redsuperadmin/redwireless/src/components/common/Area';`;
         contentServer += '\r\n';
         contentServer += `Area.defaultProps.components = ${inspect(areas, {
           depth: 5

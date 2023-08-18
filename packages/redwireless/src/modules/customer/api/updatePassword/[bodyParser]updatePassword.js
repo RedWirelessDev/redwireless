@@ -1,17 +1,17 @@
-const { update, select, del } = require('@redwireless/postgres-query-builder');
+const { update, select, del } = require('@redsuperadmin/postgres-query-builder');
 const bcrypt = require('bcryptjs');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const crypto = require('crypto');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR,
   INVALID_PAYLOAD
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import uniqid from 'uniqid';
 import { toast } from 'react-toastify';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 import './ProductMediaManager.scss';
 
 function Upload({ addImage, productImageUploadUrl }) {

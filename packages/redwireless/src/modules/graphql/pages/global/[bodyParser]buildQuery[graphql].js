@@ -1,13 +1,13 @@
 const path = require('path');
 const JSON5 = require('json5');
 const { readFileSync } = require('fs');
-const isDevelopmentMode = require('@redwireless/redwireless/src/lib/util/isDevelopmentMode');
-const isProductionMode = require('@redwireless/redwireless/src/lib/util/isProductionMode');
+const isDevelopmentMode = require('@redsuperadmin/redwireless/src/lib/util/isDevelopmentMode');
+const isProductionMode = require('@redsuperadmin/redwireless/src/lib/util/isProductionMode');
 const {
   getRouteBuildPath
-} = require('@redwireless/redwireless/src/lib/webpack/getRouteBuildPath');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { getRoutes } = require('@redwireless/redwireless/src/lib/router/Router');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/getRouteBuildPath');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { getRoutes } = require('@redsuperadmin/redwireless/src/lib/router/Router');
 // eslint-disable-next-line no-unused-vars
 const { getContextValue } = require('../../services/contextHelper');
 

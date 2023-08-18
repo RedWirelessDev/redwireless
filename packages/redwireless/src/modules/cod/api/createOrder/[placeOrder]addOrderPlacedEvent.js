@@ -1,6 +1,6 @@
-const { emit } = require('@redwireless/redwireless/src/lib/event/emitter');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { select } = require('@redwireless/postgres-query-builder');
+const { emit } = require('@redsuperadmin/redwireless/src/lib/event/emitter');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

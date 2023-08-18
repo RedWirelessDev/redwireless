@@ -2,8 +2,8 @@ const {
   getContextValue,
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
 
 module.exports = (request, response, delegate, next) => {
   // Get the token Payload

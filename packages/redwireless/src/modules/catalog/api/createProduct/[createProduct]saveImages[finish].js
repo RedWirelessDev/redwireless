@@ -1,10 +1,10 @@
-const { insert, update } = require('@redwireless/postgres-query-builder');
+const { insert, update } = require('@redsuperadmin/postgres-query-builder');
 const sharp = require('sharp');
 const config = require('config');
 const path = require('path');
 const { existsSync } = require('fs');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 
 module.exports = async (request, response, deledate) => {
   let gallery = get(request, 'body.images', []);

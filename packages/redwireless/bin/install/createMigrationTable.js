@@ -1,4 +1,4 @@
-const { execute } = require('@redwireless/postgres-query-builder');
+const { execute } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports.createMigrationTable = async function createMigrationTable(
   connection

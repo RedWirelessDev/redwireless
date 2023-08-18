@@ -1,4 +1,4 @@
-const { UNAUTHORIZED } = require('@redwireless/redwireless/src/lib/util/httpStatus');
+const { UNAUTHORIZED } = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 
 module.exports = (request, response, delegate, next) => {

@@ -2,12 +2,12 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import PubSub from 'pubsub-js';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 import {
   FORM_SUBMIT,
   FORM_VALIDATED
-} from '@redwireless/redwireless/src/lib/util/events';
-import { serializeForm } from '@redwireless/redwireless/src/lib/util/formToJson';
+} from '@redsuperadmin/redwireless/src/lib/util/events';
+import { serializeForm } from '@redsuperadmin/redwireless/src/lib/util/formToJson';
 import Button from '@components/common/form/Button';
 import { validator } from './validator';
 

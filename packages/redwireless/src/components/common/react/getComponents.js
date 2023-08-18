@@ -1,9 +1,9 @@
 import { useAppState } from '@components/common/context/app';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 
 /* eslint-disable global-require */
 const { resolve } = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 
 export function getComponents() {
   const componentsPath = get(useAppState(), 'componentsPath');

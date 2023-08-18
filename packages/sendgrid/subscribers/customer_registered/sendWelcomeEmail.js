@@ -1,7 +1,7 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const sgMail = require('@sendgrid/mail');
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = async function sendOrderConfirmationEmail(data) {
   try {

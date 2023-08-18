@@ -1,6 +1,6 @@
-const { select } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { select } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');

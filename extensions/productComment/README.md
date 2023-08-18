@@ -5,7 +5,7 @@ This is the source code for the RedWireless extension development guide: [RedWir
 ## Installation
 
 ```bash
-npm install @redwireless/productcomment
+npm install @redsuperadmin/productcomment
 ```
 
 Add the extension to your `config/default.json` file:
@@ -16,7 +16,7 @@ Add the extension to your `config/default.json` file:
         "extensions": [
             {
                 "name": "productcomment",
-                "resolve": "node_modules/@redwireless/productcomment",
+                "resolve": "node_modules/@redsuperadmin/productcomment",
                 "enabled": true
             }
         ]

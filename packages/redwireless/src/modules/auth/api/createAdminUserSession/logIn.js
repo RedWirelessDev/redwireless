@@ -1,16 +1,16 @@
-const { select, insert } = require('@redwireless/postgres-query-builder');
+const { select, insert } = require('@redsuperadmin/postgres-query-builder');
 const { compareSync } = require('bcryptjs');
 const { sign } = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   getAdminTokenCookieId
 } = require('../../services/getAdminTokenCookieId');
 const {
   INVALID_PAYLOAD,
   OK
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

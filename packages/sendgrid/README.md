@@ -9,7 +9,7 @@ A SendGrid extension for RedWireless. This extension is used to send email to cu
 ### Step 1: Install the extension package
 
 ```javascript
-npm install @redwireless/sendgrid
+npm install @redsuperadmin/sendgrid
 ```
 ### Step 2: Register the extension by adding it to the config file
 
@@ -23,7 +23,7 @@ npm install @redwireless/sendgrid
         ...,
         {
           "name": "sendGrid",
-          "resolve": "node_modules/@redwireless/sendgrid",
+          "resolve": "node_modules/@redsuperadmin/sendgrid",
           "enabled": true,
           "priority": 10
         }

@@ -23,7 +23,7 @@
     "build": "redwireless build",
     "start": "redwireless start",
     "start:debug": "redwireless start --debug",
-    "test": "jest --workspace=@redwireless/redwireless",
+    "test": "jest --workspace=@redsuperadmin/redwireless",
     "cypress": "cypress run"
   },
   "author": "Karan Singh Gill (https://redwireless.ca)",

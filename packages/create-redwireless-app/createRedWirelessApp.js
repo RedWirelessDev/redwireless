@@ -214,13 +214,13 @@ function install(root, useYarn, dependencies, verbose, isOnline) {
 }
 
 function run(root, appName, verbose, originalDirectory, useYarn) {
-  console.log(`Installing ${chalk.cyan('@redwireless/redwireless')}`);
+  console.log(`Installing ${chalk.cyan('@redsuperadmin/redwireless')}`);
   checkIfOnline(useYarn)
     .then((isOnline) => ({
       isOnline
     }))
     .then(({ isOnline }) => {
-      const allDependencies = ['@redwireless/redwireless'];
+      const allDependencies = ['@redsuperadmin/redwireless'];
       return install(root, useYarn, allDependencies, verbose, isOnline).then(
         async () => {
           await setUpRedWireless(root);
@@ -523,7 +523,7 @@ function loadConfigTemplate(projectDir) {
     readFileSync(
       path.resolve(
         projectDir,
-        './node_modules/@redwireless/redwireless/bin/install/templates/config.json'
+        './node_modules/@redsuperadmin/redwireless/bin/install/templates/config.json'
       ),
       'utf-8'
     )

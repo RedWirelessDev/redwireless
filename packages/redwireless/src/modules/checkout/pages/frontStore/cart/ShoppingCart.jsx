@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Area from '@components/common/Area';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 import { useAppState } from '@components/common/context/app';
 import Items from '@components/frontStore/checkout/cart/items/Items';
 import { Empty } from '@components/frontStore/checkout/cart/Empty';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 function Title({ title }) {
   const items = get(useAppState(), 'cart.items', []);

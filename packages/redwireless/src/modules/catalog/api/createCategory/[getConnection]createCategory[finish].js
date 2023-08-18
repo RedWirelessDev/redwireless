@@ -1,4 +1,4 @@
-const { insert, select } = require('@redwireless/postgres-query-builder');
+const { insert, select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = async (request, response, delegate) => {
   const connection = await delegate.getConnection;

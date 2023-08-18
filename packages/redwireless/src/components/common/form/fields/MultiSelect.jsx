@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Error from '@components/common/form/fields/Error';
 import '../Field.scss';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 const MultiSelect = React.forwardRef((props, ref) => {
   const {

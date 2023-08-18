@@ -1,4 +1,4 @@
-const { timezones } = require('@redwireless/redwireless/src/lib/locale/timezones');
+const { timezones } = require('@redsuperadmin/redwireless/src/lib/locale/timezones');
 
 module.exports = {
   Query: {

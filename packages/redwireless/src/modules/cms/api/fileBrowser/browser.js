@@ -1,11 +1,11 @@
 const { join } = require('path');
 const { existsSync, readdirSync } = require('fs');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 const {
   INVALID_PAYLOAD,
   OK
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = (request, response, delegate, next) => {

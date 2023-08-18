@@ -1,12 +1,12 @@
 const {
   INTERNAL_SERVER_ERROR
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
 const {
   getContextValue
-} = require('@redwireless/redwireless/src/modules/graphql/services/contextHelper');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+} = require('@redsuperadmin/redwireless/src/modules/graphql/services/contextHelper');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const sgMail = require('@sendgrid/mail');
 
 // eslint-disable-next-line no-unused-vars

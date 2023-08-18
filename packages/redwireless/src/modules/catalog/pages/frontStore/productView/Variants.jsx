@@ -2,10 +2,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import PubSub from 'pubsub-js';
-import { FORM_VALIDATED } from '@redwireless/redwireless/src/lib/util/events';
+import { FORM_VALIDATED } from '@redsuperadmin/redwireless/src/lib/util/events';
 import './Variants.scss';
 import { useAppDispatch } from '@components/common/context/app';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 
 export default function Variants({
   product: { variantGroup: vs },

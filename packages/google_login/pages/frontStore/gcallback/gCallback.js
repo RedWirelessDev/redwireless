@@ -1,17 +1,17 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const {
   getTokenCookieId
-} = require('@redwireless/redwireless/src/modules/auth/services/getTokenCookieId');
+} = require('@redsuperadmin/redwireless/src/modules/auth/services/getTokenCookieId');
 const {
   getGoogleAuthToken
-} = require('@redwireless/google_login/services/getGoogleAuthToken');
+} = require('@redsuperadmin/google_login/services/getGoogleAuthToken');
 const {
   getGoogleUserInfo
-} = require('@redwireless/google_login/services/getGoogleUserInfo');
-const { select, insert } = require('@redwireless/postgres-query-builder');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
+} = require('@redsuperadmin/google_login/services/getGoogleUserInfo');
+const { select, insert } = require('@redsuperadmin/postgres-query-builder');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
 
 module.exports = async (request, response, delegate, next) => {
   const code = request.query.code;

@@ -1,4 +1,4 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   setContextValue,
   hasContextValue

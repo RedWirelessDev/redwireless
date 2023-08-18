@@ -4,15 +4,15 @@ const {
   commit,
   rollback,
   select
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 const {
   getConnection,
   pool
-} = require('@redwireless/redwireless/src/lib/postgres/connection');
+} = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

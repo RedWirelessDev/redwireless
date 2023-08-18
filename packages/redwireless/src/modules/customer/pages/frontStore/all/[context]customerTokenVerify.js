@@ -1,12 +1,12 @@
 const jwt = require('jsonwebtoken');
 const { v4: uuidv4 } = require('uuid');
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { getTokenSecret } = require('../../../../auth/services/getTokenSecret');
 const { generateToken } = require('../../../../auth/services/generateToken');
 const {

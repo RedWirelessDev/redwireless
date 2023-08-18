@@ -1,5 +1,5 @@
 const { normalize, basename } = require('path');
-const { Handler } = require('@redwireless/redwireless/src/lib/middleware/Handler');
+const { Handler } = require('@redsuperadmin/redwireless/src/lib/middleware/Handler');
 const { broadcash } = require('./broadcash');
 
 module.exports.watchMF = function (event, path) {

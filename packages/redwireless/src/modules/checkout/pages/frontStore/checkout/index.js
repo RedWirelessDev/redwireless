@@ -1,4 +1,4 @@
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 const {
   setContextValue,
   getContextValue
@@ -6,7 +6,7 @@ const {
 const { getCustomerCart } = require('../../../services/getCustomerCart');
 const {
   translate
-} = require('@redwireless/redwireless/src/lib/locale/translate/translate');
+} = require('@redsuperadmin/redwireless/src/lib/locale/translate/translate');
 
 module.exports = async (request, response, delegate, next) => {
   const cart = await getCustomerCart(

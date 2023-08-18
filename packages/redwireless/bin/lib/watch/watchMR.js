@@ -1,8 +1,8 @@
 const chokidar = require('chokidar');
 const { existsSync } = require('fs');
 const { resolve } = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { Handler } = require('@redwireless/redwireless/src/lib/middleware/Handler');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { Handler } = require('@redsuperadmin/redwireless/src/lib/middleware/Handler');
 const { updateApp } = require('../startUp');
 const { broadcash } = require('./broadcash');
 const { red } = require('kleur');

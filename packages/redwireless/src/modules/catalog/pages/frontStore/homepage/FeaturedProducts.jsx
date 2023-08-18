@@ -1,5 +1,5 @@
 import ProductList from '@components/frontStore/catalog/product/list/List';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 import PropTypes from 'prop-types';
 import React from 'react';
 

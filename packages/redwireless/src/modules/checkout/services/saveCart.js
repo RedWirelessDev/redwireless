@@ -6,11 +6,11 @@ const {
   insert,
   rollback,
   select
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 const {
   pool,
   getConnection
-} = require('@redwireless/redwireless/src/lib/postgres/connection');
+} = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 
 module.exports = exports;
 

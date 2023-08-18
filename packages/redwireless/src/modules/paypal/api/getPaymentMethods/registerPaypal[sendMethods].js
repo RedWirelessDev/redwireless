@@ -1,4 +1,4 @@
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const { getSetting } = require('../../../setting/services/setting');
 
 // eslint-disable-next-line no-unused-vars

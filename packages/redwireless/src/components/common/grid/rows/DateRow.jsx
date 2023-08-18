@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { DateTime } from 'luxon';
 import { useAppState } from '@components/common/context/app';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 
 export default function DateRow({ id, areaProps }) {
   const context = useAppState();

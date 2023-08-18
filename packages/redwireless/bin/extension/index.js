@@ -1,8 +1,8 @@
 const { existsSync } = require('fs');
 const { resolve } = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
-const { getCoreModules } = require('@redwireless/redwireless/bin/lib/loadModules');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
+const { getCoreModules } = require('@redsuperadmin/redwireless/bin/lib/loadModules');
 
 var extensions = [];
 

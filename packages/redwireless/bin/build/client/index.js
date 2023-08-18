@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const {
   createConfigClient
-} = require('@redwireless/redwireless/src/lib/webpack/prod/createConfigClient');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/prod/createConfigClient');
 
 module.exports.buildClient = async function buildClient(routes) {
   const config = createConfigClient(routes);

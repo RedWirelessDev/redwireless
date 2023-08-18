@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const {
   createConfigServer
-} = require('@redwireless/redwireless/src/lib/webpack/prod/createConfigServer');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/prod/createConfigServer');
 
 module.exports.buildServer = async function buildServer(routes) {
   const config = createConfigServer(routes);

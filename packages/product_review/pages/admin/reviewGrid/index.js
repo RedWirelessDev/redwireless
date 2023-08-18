@@ -1,9 +1,9 @@
 const {
   buildFilterFromUrl
-} = require('@redwireless/redwireless/src/lib/util/buildFilterFromUrl');
+} = require('@redsuperadmin/redwireless/src/lib/util/buildFilterFromUrl');
 const {
   setContextValue
-} = require('@redwireless/redwireless/src/modules/graphql/services/contextHelper');
+} = require('@redsuperadmin/redwireless/src/modules/graphql/services/contextHelper');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = (request, response) => {

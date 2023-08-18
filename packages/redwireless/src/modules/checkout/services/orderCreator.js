@@ -6,10 +6,10 @@ const {
   select,
   startTransaction,
   update
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 
 /* Default validation rules */
 let validationServices = [

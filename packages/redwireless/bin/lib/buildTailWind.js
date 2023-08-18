@@ -3,15 +3,15 @@ const { mkdir, writeFile } = require('fs').promises;
 const path = require('path');
 const {
   getComponentsByRoute
-} = require('@redwireless/redwireless/src/lib/componee/getComponentsByRoute');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+} = require('@redsuperadmin/redwireless/src/lib/componee/getComponentsByRoute');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const {
   getRouteBuildPath
-} = require('@redwireless/redwireless/src/lib/webpack/getRouteBuildPath');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/getRouteBuildPath');
 const dependencyTree = require('dependency-tree');
 const {
   isBuildRequired
-} = require('@redwireless/redwireless/src/lib/webpack/isBuildRequired');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/isBuildRequired');
 const postcss = require('postcss');
 const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
@@ -54,8 +54,8 @@ module.exports.buildTailwind = async function buildTailwind(
 
       // Use PostCss to parse tailwind.css with tailwind config
       const defaultTailwindConfig = route.isAdmin
-        ? require('@redwireless/redwireless/src/modules/cms/services/tailwind.admin.config.js')
-        : require('@redwireless/redwireless/src/modules/cms/services/tailwind.frontStore.config.js');
+        ? require('@redsuperadmin/redwireless/src/modules/cms/services/tailwind.admin.config.js')
+        : require('@redsuperadmin/redwireless/src/modules/cms/services/tailwind.frontStore.config.js');
 
       let tailwindConfig = {};
       if (route.isAdmin) {

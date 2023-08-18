@@ -1,4 +1,4 @@
-const { provinces } = require('@redwireless/redwireless/src/lib/locale/provinces');
+const { provinces } = require('@redsuperadmin/redwireless/src/lib/locale/provinces');
 
 module.exports = {
   Query: {

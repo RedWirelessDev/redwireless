@@ -1,5 +1,5 @@
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { select } = require('@redwireless/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports.getTaxRates = async function getTaxRates(
   taxClassId,

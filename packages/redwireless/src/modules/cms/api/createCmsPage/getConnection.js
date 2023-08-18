@@ -1,7 +1,7 @@
-const { startTransaction } = require('@redwireless/postgres-query-builder');
+const { startTransaction } = require('@redsuperadmin/postgres-query-builder');
 const {
   getConnection
-} = require('@redwireless/redwireless/src/lib/postgres/connection');
+} = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from '@components/common/Title';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 import { useAppState } from '@components/common/context/app';
 
 export default function MetaTitle() {

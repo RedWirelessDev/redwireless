@@ -1,7 +1,7 @@
 import React from 'react';
 import Script from '@components/common/Script';
 import { useAppState } from '@components/common/context/app';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 
 export default function BundleJS() {
   const src = get(useAppState(), 'bundleJs');

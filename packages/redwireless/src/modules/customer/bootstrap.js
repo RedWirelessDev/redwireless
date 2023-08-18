@@ -3,15 +3,15 @@ const { Cart } = require('../checkout/services/cart/Cart');
 const { v4: uuidv4 } = require('uuid');
 const {
   getTokenCookieId
-} = require('@redwireless/redwireless/src/modules/auth/services/getTokenCookieId');
+} = require('@redsuperadmin/redwireless/src/modules/auth/services/getTokenCookieId');
 const {
   setContextValue,
   getContextValue
-} = require('@redwireless/redwireless/src/modules/graphql/services/contextHelper');
+} = require('@redsuperadmin/redwireless/src/modules/graphql/services/contextHelper');
 const { sign } = require('jsonwebtoken');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { select, insertOnUpdate } = require('@redwireless/postgres-query-builder');
-const { camelCase } = require('@redwireless/redwireless/src/lib/util/camelCase');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { select, insertOnUpdate } = require('@redsuperadmin/postgres-query-builder');
+const { camelCase } = require('@redsuperadmin/redwireless/src/lib/util/camelCase');
 
 module.exports = () => {
   Cart.addField('customer_id', function resolver() {

@@ -3,7 +3,7 @@
 import React from 'react';
 import { Select } from '@components/common/form/fields/Select';
 import { useAppDispatch } from '@components/common/context/app';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 import options from '@components/frontStore/catalog/product/list/SortOptions';
 
 export default function Sorting() {

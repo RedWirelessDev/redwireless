@@ -11,9 +11,9 @@ const {
   startTransaction,
   commit,
   rollback
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 const { prompt } = require('enquirer');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const { migrate } = require('./migrate');
 const { createMigrationTable } = require('./createMigrationTable');
 

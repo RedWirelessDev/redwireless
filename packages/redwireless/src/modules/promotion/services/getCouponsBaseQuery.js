@@ -1,4 +1,4 @@
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports.getCouponsBaseQuery = () => {
   const query = select().from('coupon');

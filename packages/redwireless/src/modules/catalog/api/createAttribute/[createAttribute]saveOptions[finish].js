@@ -1,8 +1,8 @@
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-prototype-builtins */
 /* eslint-disable no-restricted-syntax */
-const { insert } = require('@redwireless/postgres-query-builder');
-const { get } = require('@redwireless/redwireless/src/lib/util/get');
+const { insert } = require('@redsuperadmin/postgres-query-builder');
+const { get } = require('@redsuperadmin/redwireless/src/lib/util/get');
 
 module.exports = async (request, response, delegate) => {
   const attribute = await delegate.createAttribute;

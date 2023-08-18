@@ -3,7 +3,7 @@ import React from 'react';
 import './MiniCart.scss';
 import Bag from '@heroicons/react/outline/ShoppingBagIcon';
 import { useAppState } from '@components/common/context/app';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 
 export default function MiniCart({ cartUrl, cart }) {
   const miniCart = get(useAppState(), 'cart', cart || {});

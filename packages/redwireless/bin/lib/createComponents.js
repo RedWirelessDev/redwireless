@@ -1,11 +1,11 @@
 const { mkdir, writeFile } = require('fs').promises;
 const path = require('path');
 const { inspect } = require('util');
-const { Componee } = require('@redwireless/redwireless/src/lib/componee/Componee');
-const isProductionMode = require('@redwireless/redwireless/src/lib/util/isProductionMode');
+const { Componee } = require('@redsuperadmin/redwireless/src/lib/componee/Componee');
+const isProductionMode = require('@redsuperadmin/redwireless/src/lib/util/isProductionMode');
 const {
   getRouteBuildPath
-} = require('@redwireless/redwireless/src/lib/webpack/getRouteBuildPath');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/getRouteBuildPath');
 
 module.exports.createComponents = async function createComponents(
   routes,
@@ -29,14 +29,14 @@ module.exports.createComponents = async function createComponents(
       let contentClient = `
       import React from 'react';
       import ReactDOM from 'react-dom';
-      import Area from '@redwireless/redwireless/src/lib/components/Area';
+      import Area from '@redsuperadmin/redwireless/src/lib/components/Area';
       `;
       if (isProductionMode()) {
-        contentClient += `import Hydrate from '@redwireless/redwireless/src/lib/components/react/client/Hydrate';`;
+        contentClient += `import Hydrate from '@redsuperadmin/redwireless/src/lib/components/react/client/Hydrate';`;
       } else {
-        contentClient += `import { App } from '@redwireless/redwireless/src/lib/components/react/client/Client';
+        contentClient += `import { App } from '@redsuperadmin/redwireless/src/lib/components/react/client/Client';
       const hot = require('webpack-hot-middleware/client?path=/eHot/${route.id}&reload=true');
-      import { HotReload } from '@redwireless/redwireless/src/lib/components/react/client/HotReload';
+      import { HotReload } from '@redsuperadmin/redwireless/src/lib/components/react/client/HotReload';
       `;
       }
       contentClient += '\r\n';
@@ -72,7 +72,7 @@ module.exports.createComponents = async function createComponents(
         contentServer += '\r\n';
         contentServer += `import ReactDOM from 'react-dom'; `;
         contentServer += '\r\n';
-        contentServer += `import Area from '@redwireless/redwireless/src/lib/components/Area';`;
+        contentServer += `import Area from '@redsuperadmin/redwireless/src/lib/components/Area';`;
         contentServer += '\r\n';
         contentServer += `Area.defaultProps.components = ${inspect(components, {
           depth: 5

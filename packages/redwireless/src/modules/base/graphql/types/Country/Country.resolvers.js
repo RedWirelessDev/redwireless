@@ -1,7 +1,7 @@
-const { contries } = require('@redwireless/redwireless/src/lib/locale/countries');
-const { provinces } = require('@redwireless/redwireless/src/lib/locale/provinces');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { select } = require('@redwireless/postgres-query-builder');
+const { contries } = require('@redsuperadmin/redwireless/src/lib/locale/countries');
+const { provinces } = require('@redsuperadmin/redwireless/src/lib/locale/provinces');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 
 module.exports = {
   Query: {

@@ -1,20 +1,20 @@
 /* eslint-disable no-underscore-dangle */
 const isEqualWith = require('lodash/isEqualWith');
-const { select, del } = require('@redwireless/postgres-query-builder');
+const { select, del } = require('@redsuperadmin/postgres-query-builder');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { DataObject } = require('./DataObject');
 const { Item } = require('./Item');
 const { toPrice } = require('../toPrice');
 const { getSetting } = require('../../../setting/services/setting');
 const { default: axios } = require('axios');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 const { getTaxPercent } = require('../../../tax/services/getTaxPercent');
 const { getTaxRates } = require('../../../tax/services/getTaxRates');
 const {
   calculateTaxAmount
 } = require('../../../tax/services/calculateTaxAmount');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 // eslint-disable-next-line no-multi-assign
 module.exports = exports = {};
 

@@ -1,7 +1,7 @@
-const { update, select } = require('@redwireless/postgres-query-builder');
+const { update, select } = require('@redsuperadmin/postgres-query-builder');
 const {
   INVALID_PAYLOAD
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 module.exports = async (request, response, delegate) => {
   const data = request.body;

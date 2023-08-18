@@ -1,6 +1,6 @@
 import React from 'react';
 import './Reviews.scss';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 import Rating from '../../../../product_review/components/Rating';
 
 export default function Reviews({ product: { reviews = [] } }) {

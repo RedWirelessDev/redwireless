@@ -1,5 +1,5 @@
 import React from 'react';
-import { _ } from '@redwireless/redwireless/src/lib/locale/translate';
+import { _ } from '@redsuperadmin/redwireless/src/lib/locale/translate';
 import './MainBanner.scss';
 
 export default function MainBanner() {

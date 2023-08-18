@@ -1,17 +1,17 @@
 /* eslint-disable camelcase */
 const { default: axios } = require('axios');
-const { select, update } = require('@redwireless/postgres-query-builder');
+const { select, update } = require('@redsuperadmin/postgres-query-builder');
 const { getContextValue } = require('../../../graphql/services/contextHelper');
 const { getSetting } = require('../../../setting/services/setting');
 const { toPrice } = require('../../../checkout/services/toPrice');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const { getApiBaseUrl } = require('../../services/getApiBaseUrl');
 const {
   INVALID_PAYLOAD,
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, stack, next) => {

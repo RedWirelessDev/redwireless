@@ -1,10 +1,10 @@
-const { insert, select } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
+const { insert, select } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
 const {
   OK,
   INTERNAL_SERVER_ERROR
-} = require('@redwireless/redwireless/src/lib/util/httpStatus');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
+} = require('@redsuperadmin/redwireless/src/lib/util/httpStatus');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
 const crypto = require('crypto');
 
 // eslint-disable-next-line no-unused-vars

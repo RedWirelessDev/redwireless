@@ -5,8 +5,8 @@ const {
   del,
   select,
   update
-} = require('@redwireless/postgres-query-builder');
-const { merge } = require('@redwireless/redwireless/src/lib/util/merge');
+} = require('@redsuperadmin/postgres-query-builder');
+const { merge } = require('@redsuperadmin/redwireless/src/lib/util/merge');
 
 async function saveOptionValues(optionId, values, connection) {
   if (!values || values === 0) {

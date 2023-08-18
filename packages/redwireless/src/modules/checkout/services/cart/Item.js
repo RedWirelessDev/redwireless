@@ -1,12 +1,12 @@
 const config = require('config');
-const { select } = require('@redwireless/postgres-query-builder');
+const { select } = require('@redsuperadmin/postgres-query-builder');
 const fs = require('fs');
 const path = require('path');
 const uniqid = require('uniqid');
 const { v4: uuidv4 } = require('uuid');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 /* eslint-disable no-underscore-dangle */
 const { DataObject } = require('./DataObject');
 const { toPrice } = require('../toPrice');

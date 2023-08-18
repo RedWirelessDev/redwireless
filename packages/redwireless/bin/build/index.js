@@ -1,16 +1,16 @@
 const { existsSync, rmSync, mkdirSync } = require('fs');
 const path = require('path');
-const { CONSTANTS } = require('@redwireless/redwireless/src/lib/helpers');
+const { CONSTANTS } = require('@redsuperadmin/redwireless/src/lib/helpers');
 const {
   loadModuleRoutes
-} = require('@redwireless/redwireless/src/lib/router/loadModuleRoutes');
-const { getRoutes } = require('@redwireless/redwireless/src/lib/router/Router');
+} = require('@redsuperadmin/redwireless/src/lib/router/loadModuleRoutes');
+const { getRoutes } = require('@redsuperadmin/redwireless/src/lib/router/Router');
 const {
   isBuildRequired
-} = require('@redwireless/redwireless/src/lib/webpack/isBuildRequired');
+} = require('@redsuperadmin/redwireless/src/lib/webpack/isBuildRequired');
 const { getEnabledExtensions } = require('../extension');
-const { buildEntry } = require('@redwireless/redwireless/bin/lib/buildEntry');
-const { getCoreModules } = require('@redwireless/redwireless/bin/lib/loadModules');
+const { buildEntry } = require('@redsuperadmin/redwireless/bin/lib/buildEntry');
+const { getCoreModules } = require('@redsuperadmin/redwireless/bin/lib/loadModules');
 const { compile } = require('./complie');
 
 /* Loading modules and initilize routes, components */

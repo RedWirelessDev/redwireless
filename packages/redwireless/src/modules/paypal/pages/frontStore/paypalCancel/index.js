@@ -1,6 +1,6 @@
-const { select, update } = require('@redwireless/postgres-query-builder');
-const { pool } = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { buildUrl } = require('@redwireless/redwireless/src/lib/router/buildUrl');
+const { select, update } = require('@redsuperadmin/postgres-query-builder');
+const { pool } = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { buildUrl } = require('@redsuperadmin/redwireless/src/lib/router/buildUrl');
 
 module.exports = async (request, response) => {
   // When the user cancelled the payment from PayPal

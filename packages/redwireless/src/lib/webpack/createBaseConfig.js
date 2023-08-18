@@ -1,6 +1,6 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
-const { getCoreModules } = require('@redwireless/redwireless/bin/lib/loadModules');
+const { getCoreModules } = require('@redsuperadmin/redwireless/bin/lib/loadModules');
 const { CONSTANTS } = require('../helpers');
 const isProductionMode = require('../util/isProductionMode');
 const { getEnabledExtensions } = require('../../../bin/extension');

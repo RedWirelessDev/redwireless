@@ -2,7 +2,7 @@ import React from 'react';
 import { createClient, Provider } from 'urql';
 import Area from '@components/common/Area';
 import { useAppState } from '@components/common/context/app';
-import { get } from '@redwireless/redwireless/src/lib/util/get';
+import { get } from '@redsuperadmin/redwireless/src/lib/util/get';
 
 const AuthContext = React.createContext();
 

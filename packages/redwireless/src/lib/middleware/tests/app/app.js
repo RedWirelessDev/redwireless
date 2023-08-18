@@ -4,11 +4,11 @@
 const path = require('path');
 const {
   addDefaultMiddlewareFuncs
-} = require('@redwireless/redwireless/bin/lib/addDefaultMiddlewareFuncs');
+} = require('@redsuperadmin/redwireless/bin/lib/addDefaultMiddlewareFuncs');
 const express = require('express');
 const {
   loadModuleRoutes
-} = require('@redwireless/redwireless/src/lib/router/loadModuleRoutes');
+} = require('@redsuperadmin/redwireless/src/lib/router/loadModuleRoutes');
 const { getModuleMiddlewares } = require('../..');
 const { getRoutes } = require('../../../router/Router');
 const { once } = require('events');

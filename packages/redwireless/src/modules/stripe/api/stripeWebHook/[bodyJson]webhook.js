@@ -6,13 +6,13 @@ const {
   commit,
   rollback,
   select
-} = require('@redwireless/postgres-query-builder');
+} = require('@redsuperadmin/postgres-query-builder');
 const {
   getConnection
-} = require('@redwireless/redwireless/src/lib/postgres/connection');
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+} = require('@redsuperadmin/redwireless/src/lib/postgres/connection');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 const { getSetting } = require('../../../setting/services/setting');
-const { emit } = require('@redwireless/redwireless/src/lib/event/emitter');
+const { emit } = require('@redsuperadmin/redwireless/src/lib/event/emitter');
 
 // eslint-disable-next-line no-unused-vars
 module.exports = async (request, response, delegate, next) => {

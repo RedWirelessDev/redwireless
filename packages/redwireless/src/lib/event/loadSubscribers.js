@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
-const { getCoreModules } = require('@redwireless/redwireless/bin/lib/loadModules');
-const { getEnabledExtensions } = require('@redwireless/redwireless/bin/extension');
-const { debug } = require('@redwireless/redwireless/src/lib/log/debuger');
+const { getCoreModules } = require('@redsuperadmin/redwireless/bin/lib/loadModules');
+const { getEnabledExtensions } = require('@redsuperadmin/redwireless/bin/extension');
+const { debug } = require('@redsuperadmin/redwireless/src/lib/log/debuger');
 
 function loadModuleSubscribers(modulePath) {
   const subscribers = [];

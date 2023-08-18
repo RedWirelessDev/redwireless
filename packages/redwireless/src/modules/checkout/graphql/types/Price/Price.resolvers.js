@@ -1,4 +1,4 @@
-const { getConfig } = require('@redwireless/redwireless/src/lib/util/getConfig');
+const { getConfig } = require('@redsuperadmin/redwireless/src/lib/util/getConfig');
 
 module.exports = {
   Price: {

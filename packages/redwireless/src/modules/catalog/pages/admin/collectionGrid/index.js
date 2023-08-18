@@ -1,6 +1,6 @@
 const {
   buildFilterFromUrl
-} = require('@redwireless/redwireless/src/lib/util/buildFilterFromUrl');
+} = require('@redsuperadmin/redwireless/src/lib/util/buildFilterFromUrl');
 const {
   setContextValue
 } = require('../../../../graphql/services/contextHelper');
